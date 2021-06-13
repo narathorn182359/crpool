@@ -28,7 +28,7 @@
 
   <!-- Template Main CSS File -->
   <link href="{{asset('crpool/assets/css/style.css?v='.time())}}" rel="stylesheet">
- 
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   <!-- =======================================================
   * Template Name: BizLand - v1.2.1
   * Template URL: https://bootstrapmade.com/bizland-bootstrap-business-template/
@@ -65,9 +65,12 @@
       <nav class="nav-menu d-none d-lg-block">
         <ul>
     
-          <li><a href="{{url('about')}}">เกี่ยวกับเรา</a></li>
-          <li><a href="{{url('services')}}">บริการของเรา</a></li>
-          <li><a href="{{url('portfolio')}}"></a></li>
+        
+     
+          <li><a href="{{url('product')}}">สินค้า</a></li>
+          <li><a href="{{url('gallery')}}">แกลลอรี่</a></li>
+          <li><a href="{{url('services')}}">บริการ</a></li>
+          <li><a href="{{url('project')}}">โครงการ</a></li>
           <li><a href="{{url('contact')}}">ติดต่อเรา</a></li>
 
         </ul>
@@ -83,7 +86,7 @@
   <!-- ======= Footer ======= -->
   <footer id="footer">
 
-    <div class="footer-newsletter">
+    {{-- <div class="footer-newsletter">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-6">
@@ -95,20 +98,18 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> --}}
 
     <div class="footer-top">
       <div class="container">
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>BizLand<span>.</span></h3>
+            <h3>CRPool<span>.</span></h3>
             <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
+              275 หมู่ 5 ตำบลบ้านส้อง <br> อำเภอเวียงสระ จังหวัดสุราษร์ธานี 84190 <br><br>
+              <strong>Phone:</strong> +66 077-366736  <br>
+              <strong>Email:</strong> crpool2015@gmail.com <br>
             </p>
           </div>
 
