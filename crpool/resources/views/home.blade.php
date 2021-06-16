@@ -15,6 +15,7 @@
                     <a href="{{url('/gallery/a4/งานระบบน้ำพุ')}}" class="btn btn-primary">งานระบบน้ำพุ</a>
                 </div>
             </div>
+            <br>
             <div class="card">
                 <div class="card-header">จัดการสินค้า</div>
 
