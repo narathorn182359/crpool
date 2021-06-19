@@ -5,8 +5,11 @@
     <div class="row justify-content-center">
       
         <div class="col-md-9">
+          <a href="{{url('/home')}}">ย้อนกลับ</a>
             <div class="card">
-                <div class="card-header">เพิ่มสินค้า</div>
+                <div class="card-header">
+                  
+                  เพิ่มแกลลอรี่ {{$name}}</div>
 
                 <div class="card-body">
                     @if(session('success'))
@@ -30,13 +33,13 @@
                     <input type="hidden" name="type" id="type" value="{{$id}}">
                     <input type="hidden" name="name" id="name" value="{{$name}}">
                     <div class="row">
-                      <div class="col-md-4"></div>
+                     
                       <div class="form-group col-md-4">
-                      <input type="file" name="profileImage[]" class="form-control" multiple="">
+                        <label for="">เลือกรูปภาพเพิ่มได้มากกว่า 1 รูป </label>
+                      <input type="file" name="profileImage[]"  multiple="">
                       </div>
                     </div>
                     <div class="row">
-                      <div class="col-md-4"></div>
                       <div class="form-group col-md-4">
                       <button type="submit" class="btn btn-success" style="margin-top:10px">เพิ่มรูป</button>
                       </div>

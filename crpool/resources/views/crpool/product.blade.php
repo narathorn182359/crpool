@@ -25,10 +25,10 @@
 
           @foreach ($product as $item)
           <div class="col-lg-4 col-md-6 portfolio-item {{$item->category}}">
-            <img src="{{url('product/'.$item->img)}}" class="img-fluid" alt="">
+            <img src="{{url('products/'.$item->img)}}" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>{{$item->name}}</h4>
-              <a href="{{url('product/'.$item->img)}}" data-gall="portfolioGallery" class="venobox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+              <a href="{{url('products/'.$item->img)}}" data-gall="portfolioGallery" class="venobox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
               <a href="{{url('productview/'.$item->id)}}" class="details-link" title="More Details"><i class="fas fa-eye"></i></a>
             </div>
           </div>

@@ -20,7 +20,7 @@
 
         <div class="owl-carousel portfolio-details-carousel">
             @foreach ($img as $item)
-            <img src="{{url('product/'.$item->img)}}" class="img-fluid" alt="" width="50%">
+            <img src="{{url('products/'.$item->img)}}" class="img-fluid" alt="" width="50%">
             @endforeach
         
   

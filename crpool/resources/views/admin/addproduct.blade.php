@@ -3,6 +3,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-9">
+          <a href="{{url('/home')}}">ย้อนกลับ</a>
             <div class="card">
                 <div class="card-header">เพิ่มสินค้า</div>
 
@@ -18,13 +19,17 @@
                     @csrf
                     
                     <div class="row">
-                  
+                      
                       <div class="form-group col-md-4">
-                        <label for="">รูป:</label>
+                        <label for="">รูปปก:</label>
+                      <input type="file" name="profileImageTitel"  multiple="">
+                      </div>
+                      <div class="form-group col-md-4">
+                        <label for="">รูปแสดงในหน้ารายละเอียด:</label>
                       <input type="file" name="profileImage[]"  multiple="">
                       </div>
                       <div class="form-group col-md-4">
-                          <label for="">ชื่อ:</label>
+                          <label for="">ชื่อสินค้า:</label>
                       <input type="text" name="name" class="form-control" multiple="">
                       </div>
                       <div class="form-group col-md-4">
@@ -38,7 +43,7 @@
                     </div>
                     <div class="row">
                       <div class="form-group col-md-12">
-                      <label for="">ประเภท:</label>
+                      <label for="">รายละเอียด:</label>
                       <textarea name="detail" id="detail" cols="30" rows="10"  class="form-control">
 
                       </textarea>
@@ -47,7 +52,7 @@
                     <div class="row">
                     
                       <div class="form-group col-md-4">
-                      <button type="submit" class="btn btn-success" style="margin-top:10px">เพิ่มรูป</button>
+                      <button type="submit" class="btn btn-success" style="margin-top:10px">บันทึก</button>
                       </div>
                     </div>
                     

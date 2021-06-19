@@ -25,15 +25,17 @@
       <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
         @foreach ($gallery as $item)
+
         <div class="col-lg-4 col-md-6 portfolio-item {{$item->type}}">
-            <img src="{{url('gallery/'.$item->img)}}" class="img-fluid" alt="">
+            <img src="{{url('gallerys/'.$item->img)}}" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>{{$item->name}}</h4>
              
-              <a href="{{url('gallery/'.$item->img)}}" data-gall="portfolioGallery" class="venobox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+              <a href="{{url('gallerys/'.$item->img)}}" data-gall="portfolioGallery" class="venobox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
              
             </div>
           </div>
+          
         @endforeach
      
 
